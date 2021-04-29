@@ -13,3 +13,27 @@
 		line-height: 1;
 	}
 }
+
+.t-card {
+	margin: 20px;
+}
+.t-card-img {
+	border-radius: 10px;
+	width: 300px;
+	height: 480px;
+	box-shadow: 0px 0px 3px 1px #ccc;
+}
+.t-card-info {
+	margin-top: 10px;
+	min-height: 100px;
+}
+
+.t-card-title {
+	font-size: 24px;
+	margin: 0px;
+}
+
+.t-card-sub-title {
+	font-size: 16px;
+	margin: 0px;
+}

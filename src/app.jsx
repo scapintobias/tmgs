@@ -38,27 +38,35 @@ class App extends React.Component {
 	render() {
 		return (
 			<Router>
-				<Container className="p-0" fluid={true}>
-					<Navbar className="border-bottom" bg="transparent" expand="lg">
-						<Navbar.Brand>TMGS.</Navbar.Brand>
+				<Container className='p-0' fluid={true}>
+					<Navbar
+						className='border-bottom'
+						bg='transparent'
+						expand='lg'>
+						<Navbar.Brand className='font-weight-bolder'>
+							TMGS.
+						</Navbar.Brand>
 
-						<Navbar.Toggle className="border-0" aria-controls="navbar-toggle" />
-						<Navbar.Collapse id="navbar-toggle">
-							<Nav className="ml-auto">
-								<Link className="nav-link" to="/">
+						<Navbar.Toggle
+							className='border-0'
+							aria-controls='navbar-toggle'
+						/>
+						<Navbar.Collapse id='navbar-toggle'>
+							<Nav className='ml-auto'>
+								<Link className='nav-link' to='/'>
 									Home
 								</Link>
-								<Link className="nav-link" to="/about">
+								<Link className='nav-link' to='/about'>
 									About
 								</Link>
-								<Link className="nav-link" to="/contact">
+								<Link className='nav-link' to='/contact'>
 									Contact
 								</Link>
 							</Nav>
 						</Navbar.Collapse>
 					</Navbar>
 					<Route
-						path="/"
+						path='/'
 						exact
 						render={() => (
 							<HomePage
@@ -69,14 +77,18 @@ class App extends React.Component {
 						)}
 					/>
 					<Route
-						path="/about"
+						path='/about'
 						exact
-						render={() => <AboutPage title={this.state.about.title} />}
+						render={() => (
+							<AboutPage title={this.state.about.title} />
+						)}
 					/>
 					<Route
-						path="/contact"
+						path='/contact'
 						exact
-						render={() => <ContactPage title={this.state.contact.title} />}
+						render={() => (
+							<ContactPage title={this.state.contact.title} />
+						)}
 					/>
 					<Footer />
 				</Container>
